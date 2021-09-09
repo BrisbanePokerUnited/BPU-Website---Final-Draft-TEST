@@ -1,0 +1,30 @@
+:root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+    --black-pure:#000;                  /* Jet Black  Hendon Mob Button & Committee text*/
+  }
+
+#table-section{
+    position: relative;
+    top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-bottom: 10px; */
+}
+.dataTables-wrapper{
+    margin-top: 50px;
+}
+/* #table-head{
+    position: fixed;
+} */
+
+.header-color{
+    /* color: var(--white); */                  /* Un Comment this if using a coloured background so the text is not white*/
+    /* text-shadow: var(--gold) 1px 0 10px; */
+    font-size: 16px;
+    /* background-color: var(--dark-blue); */   /* Un Comment this if you want to use a coloured background, also uncomment the text above*/
+}

@@ -1,0 +1,231 @@
+:root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+    --black-pure:#000;
+  }
+
+/* MEDIA QUERIES FOR TOP MENU --------------------------- */
+
+@media (max-width: 1200px) {
+    #topmenu ul li{
+        padding: 10px 10px 10px 20px;
+    }
+    #topmenu ul li a{
+        font-size:.9em;
+        letter-spacing: 2px;
+        margin-top:30px ;
+    } 
+}
+
+@media (max-width: 1024px) {
+    #bpu-logo{
+       float: left;
+       margin-left: 15px;
+    }
+    #topmenu ul li{
+        padding: 10px 10px 10px 10px;
+    } 
+    #topmenu ul li a{
+        font-size:.8em;
+        letter-spacing: 2px;
+        margin-top:30px ;
+    } 
+} 
+
+@media (max-width: 900px) {
+    #topmenu ul li{
+        padding: 10px 8px 10px 8px;
+    } 
+    #topmenu ul li a{
+        font-size: .7em;
+        letter-spacing: 2px;
+        margin-top:30px ;
+    }
+    #all-results{
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+    #user-input{
+        margin-left: 30px;
+        width: 200px;
+    }
+    #bpu-logo{
+        width: 157px;
+        height: 54px;
+    }
+} 
+
+@media (max-width: 768px) {
+    #bpu-logo{
+        display: none;
+    }
+    #bpu-logo2{
+        display: inline-block;
+        width: 210px;
+        height: 72px;
+        right:  30px;
+    }
+    #join-us {
+        margin-left: 30px;
+        grid-column: 1/10;
+        grid-row: 1/3;
+    }
+    #qa{
+    display: none;
+    }
+    #aps{
+        display: none;
+    }
+    #a-range{
+        min-width: 460px;
+        font-size: 16px;
+    }
+    #all-results{
+        padding-left: 10px;
+        font-size: 1.0rem;
+    }
+    #user-input{
+        margin-left: 20px;
+        width: 160px;
+    }
+    ::placeholder{
+        font-style: italic;
+        font-size: 10px;
+        padding-left: px;
+    }
+    #hendon-mob-button{
+        font-size: 11px;
+        height: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: black;
+        color: var(--white);
+    } 
+    #toggle{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 40px;
+        background: var(--black-mine);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+    }
+    #toggle::before{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: var(--white);
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+    #toggle::after{
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: var(--white);
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+    #toggle.active::before{
+        transform: translateY(0px)rotate(45deg);
+    }
+    #toggle.active::after{
+        transform: translateY(0px)rotate(-45deg);
+    }
+    #topmenu{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 327px;
+        background: var(--black-mine);
+        transition: 0.5s;
+    }
+    #topmenu.active{
+        right: 0px;
+    }
+    #topmenu ul {
+        position: relative;
+        margin-top: 50px;
+    }
+    #topmenu ul li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: 9px 20px 9..px 20px;
+    }
+    #topmenu ul li:hover{
+        background: #03a9f4;
+    }
+    #topmenu ul li a{
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 600px) {
+     #all-results{
+        padding-left: 0px;
+        font-size: .9rem;
+    }
+    #bpu-logo2{
+        display: inline-block;
+        width: 175px;
+        height: 60px;
+        right:  30px;
+    }
+ 
+}
+
+@media (max-width: 540px) {
+    #bpu-logo2{
+    width: 140px;
+    height: 48px;
+    }
+    #all-results{
+        padding-left: 0px;
+        font-size: .7rem;
+    }
+    #user-input{
+        margin-left: 5px;
+        width: 130px;
+    }
+    ::placeholder{
+        font-style: italic;
+        font-size: 8px;
+        padding-left: px;
+    }
+    #hendon-mob-button{
+        font-size: 10px;
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: var(--black-pure);
+        color: var(--white);
+    } 
+    #a-range{
+        font-size: 13px;
+    }
+
+@media (max-width: 400px) {
+    #a-range{
+        font-size: 11px;
+    }
+    #a-range{
+        margin-left: 10px;
+    }
+} 
+
+}

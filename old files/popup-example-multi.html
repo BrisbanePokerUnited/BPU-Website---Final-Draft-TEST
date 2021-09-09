@@ -1,0 +1,88 @@
+<!-- By Adam Khoury Video called (Click outside Close Menu Box JavaScript Css HTML Tutorial)
+    copy and paste the text below to view in YouTube
+      -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- By Adam Khoury Video called (Click outside Close Menu Box JavaScript Css HTML Tutorial)
+    copy and paste the text below to view in YouTube
+      -->    
+
+<style type="text/css">
+
+    div.myboxes{
+        position: absolute;
+        width:560px ;
+        height: 896px;
+        background: #e2e2e2;
+        padding: 20px;
+        scale: -28;
+        display: none;
+    }
+    div#box1{
+        top: 20px;
+        left: 600px;
+        background-color: blue;
+        transition: all 1s ease;
+        }
+    div#box2{
+        top: 20px;
+        left: 150px;
+        background-color: crimson;
+    }
+    div#box3{
+        top: 20px;
+        left: 300px;
+        background-color: darkgreen;
+    }
+    div#box4{
+        top: 20px;
+        left: 450px;
+        background-color: darkkhaki;
+    }
+</style>
+
+<script>
+    var boxArray = ['box1', 'box2', 'box3', 'box4'];
+    window.addEventListener ('mouseup', function(event){
+
+        for (var i=0; i < boxArray.length; i++) {
+            var box = document.getElementById(boxArray[i]);
+            if (event.target != box && event.target.parentNode != box){
+                box.style.display = 'none';
+        }
+        }
+});
+</script>
+
+</head>
+
+<!-- COMMENT OUT DIV's BELOW AND BUTTON's BELOW DEPENDING ON HOW MANY POPUPS YOU NEED  
+     IMPORTANT (YOU NEED TO COMMENT OUT IN THE ARRAY ABOVE OR USE popup-example1)-->
+<body>
+        <div id="box1" class="myboxes">
+            <h2>Pop Out Interface 1</h2>
+        </div>
+        <div id="box2" class="myboxes">
+            <h2>Pop Out Interface 2</h2>
+        </div>
+        <div id="box3" class="myboxes">
+            <h2>Pop Out Interface 3</h2>
+        </div>
+        <div id="box4" class="myboxes">
+            <h2>Pop Out Interface 4</h2>
+        </div>
+        <h3>Page Content</h3>
+        <button id="button1" onclick="document.getElementById ('box1').style.display='block'">Pop Out Interface1</button>
+        <button onclick="document.getElementById ('box2').style.display='block'">Pop Out Interface2</button>
+        <button onclick="document.getElementById ('box3').style.display='block'">Pop Out Interface3</button>
+        <button onclick="document.getElementById ('box4').style.display='block'">Pop Out Interface4</button>
+        <h4>More page content</h4>
+</body>
+</html>

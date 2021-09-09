@@ -1,0 +1,112 @@
+:root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+  }
+
+@media (max-width: 1520px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 320px;  
+    }
+}
+
+@media (max-width: 1400px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 300px;  
+    }
+    .card-title{
+    font-size: 1.2rem;
+    }
+    .card-details{
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 280px;  
+    }
+}
+
+@media (max-width: 1230px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 470px;  
+    }
+    .card-title{
+    font-size: 1.1rem;
+    }
+    .card-details{
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 470px;  
+    }
+    .card-title{
+    font-size: 1.3rem;
+    }
+    .card-details{
+        font-size: 16px;
+    }
+    #learn-image{
+        display: none;
+    }
+    #qa-100x81{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    width: 600px;  
+    }
+    .card-title{
+    font-size: 1.3rem;
+    }
+    .card-details{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 630px) {
+    .card-title{
+    font-size: 1.1rem;
+    }
+    .card-details{
+        font-size: 18px;
+    }   
+}
+@media (max-width: 560px) {
+    #bpu-logo2{
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    height: 550px;  
+    }
+    .card-title{
+    font-size: .9rem;
+    }
+    .card-details{
+    font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    #box-click1, #box-click2, #box-click3, #box-click4{
+    height: 600px;  
+    }
+    .card-title{
+    font-size: .9rem;
+    }
+    .card-details{
+    font-size: 12px;
+    }
+}
+

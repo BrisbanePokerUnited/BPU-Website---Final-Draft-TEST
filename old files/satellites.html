@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"crossorigin="anonymous">/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Brisbane Poker United</title>
+</head>
+
+<body>
+      
+    <!-- NAVBAR -->
+  <nav class="navbar  bg-dark navbar-dark py-4 fixed-top">
+    <div class="container">
+      <img src="img/BPU logo Black 210x72px.jpg" alt="">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item">
+            <a href="Index.html" class="nav-link"><span class="text-light">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="previouswinners.html" class="nav-link"><span class="text-light">Weekly Results</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="leaderboard.html" class="nav-link"><span class="text-light">Leaderboard</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="stats.html" class="nav-link"><span class="text-light">Stats</span></a>
+          </li>
+          <li class="nav-item-calendar">
+            <a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Australia%2FBrisbane&amp;src=YWttaDkxYTg2czBmZTBpbmpraGUxb3A3bXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=M2piaG92cjc4dTUzaDhkc2QxMWNxNjN2b2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E67C73&amp;color=%237986CB" target="_blank"  class="nav-link"><span class="text-light float-end">Event Calendar</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Index.html#info-contactus" class="nav-link"><span class="text-light">Contact Us</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="Index.html#info-map" class="nav-link"><span class="text-light">Location Map</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE ---------------------------------------------------------------------- -->
+  <section
+    class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Satellites at <span class="text-warning"> the Australian Poker School </span></h1>
+          <p class="lead my-4">
+            Check out what Satellites are available below.
+          </p>
+        </div>
+          <img id="qa"  class=" d-md-block" src="img/APS Black 113x113px.jpg"alt="" width="113" height="113"/>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BLUE BAND ---------------------------------------------------------------------- -->
+  <section id="blue-band">
+    <p id="blue-band-text">
+      
+    </p>
+  </section>
+
+  <!-- BOXES TO OPEN MODALS ----------------------------------------------------------- -->
+  <section class="p-5">
+    <div class="container-fluid">
+      <div class="row text-center g-4">
+
+        <!-- BOX 13 WHEN AVAILABLE-->   <!--Modal Button THIRTEEN-->
+
+        <div class="col-lg">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-calendar2-event"></i>
+              </div>
+                  <h3 class="card-title mb-3 text-warning">Monday nights - When Available</h3>
+                  <h3 class="card-title mb-3">$200 Buy-In</h3>
+                  <h3 class="card-title mb-3">1 $200 Re-Buy.</h3>
+                  <h3 class="card-title mb-3"></h3>
+                  <p class="card-text">40,000 Start Stack.</p>
+                  <p class="card-text">20 min blinds.</p>
+                  <h3 class="card-title mb-3"></h3>
+                  <button class="modal-open" data-modal="modal13">Structure<button>         
+            </div>
+          </div>
+        </div>
+
+        <!-- BOX 14 -->           <!--Modal Button FOURTEEN--> 
+
+        <!-- <div class="col-lg">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-calendar2"></i>
+              </div>
+                <h3 class="card-title mb-3 text-dark">All other Sundays</h3>  
+                <h3 class="card-title mb-3">$110</h3>
+                <h3 class="card-title mb-3">1 Re-Buy</h3>
+                <h3 class="card-title mb-3">No Add-On</h3>
+                <p class="card-text">40,000 Start Stack</p>
+                <p class="card-text">20 min blinds.</p>
+                <button class="modal-open" data-modal="modal14">Structure<button>                      
+            </div>
+          </div>
+        </div> -->
+
+        <!-- BOX 15 -->               <!--Modal Button FIFTEEN-->
+
+        <!-- <div class="col-lg">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-calendar2-event"></i>
+              </div>
+                <h3 class="card-title mb-3 text-warning">Sunday Bounty Event</h3>
+                <h3 class="card-title mb-3">$120</h3>
+                <h3 class="card-title mb-3">Freezeout.</h3>
+                <p class="card-text">50,000 Start Stack.</p>
+                <p class="card-text">30 min blinds.</p>
+                <h3 class="card-title mb-3">$30 Bounty - $80 Prize pool.</h3>
+                <button class="modal-open" data-modal="modal15">Structure<button>         
+            </div>
+          </div>
+        </div> -->
+        
+        <!-- BOX 16 -->            <!--Modal Button SIXTEEN--> 
+
+        <!-- <div class="col-lg">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-calendar2"></i>
+              </div>
+                <h3 class="card-title mb-3 text-dark">Special Event</h3>  
+                <h3 class="card-title mb-3">$250</h3>
+                <h3 class="card-title mb-3">1 Re-Buy</h3>
+                <h3 class="card-title mb-3">No Add-On</h3>
+                <p class="card-text">50,000 Start Stack</p>
+                <p class="card-text">30 min blinds.</p>
+                <button class="modal-open" data-modal="modal16">Structure<button>                       
+            </div>
+          </div>
+        </div> -->
+
+    </div>
+  </section>
+
+ <!-- CONTACT & MAP ---------------------------------------------------------------------- -->
+  <section class="p-5">
+    <div class="container d-flex justify-content-center">
+      <div class="row g-4">
+              <div class="">
+                <h2 class="text-center mb-4">Contact Info</h2>
+                <ul class="list-group list-group-flush lead">
+                  <!--ALTERNATE BETWEEN THE TWO ADDRESSES AS REQUIRED-->
+                  <!-- <li class="list-group-item">
+                    <span class="fw-bold">Location:</span> Cnr James & Arthur St New Farm
+                  </li> -->
+                  <li class="list-group-item">                                         
+                    <span class="fw-bold">Location:</span> 7 Ross Street Newstead <br> Additional parking in the "Boo" car park. <br> 126 Breakfast Creek Road Newstead.
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Phone - Keys Fitzgerald:</span> 0416-974-216
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Email:</span> brisbanepokerunited@icloud.com
+                  </li>
+                  <li class="list-group-item">
+                    <span class="fw-bold">Website:</span>  brisbanepokerunited.org
+                  </li>
+                </ul>
+              </div>
+          <div class="col-md">
+          <div class="col-gx-5">    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learn" class="p-1  text-black text-center">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <!--ALTERNATE BETWEEN THE TWO MAPS AS REQUIRED-->
+          <img src="img/Boo map with marker 2-3rds.jpg" class="img-fluid" alt="" />
+          <h3>
+            Australian Poker School
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ------------------------------------------------------------------- -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2021 - Brisbane Poker United  -  a not for profit Organisation</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <a href="#" class="float">
+          <i id="up-arrow" class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </a>
+    </div>
+  </footer>
+
+
+
+
+  
+
+    <!--THESE ARE THE ACTUAL MODALS ----------------------------------------------------------- -->
+
+          <!--Modal 13-->  
+          <div class="modal" id="modal13">     <!--CHANGE THE NUMBER TO SUIT-->
+              <div class="modal-content">
+                    <div class="modal-header">Satellites when Available.
+                        <button class="icon modal-close">&times;</button>
+                    </div>
+                      <div class="picture-content">   <!-- Modal Body where additional text and the image will be placed -->
+                        <img class="Flyer" src="img/Monster Stack November Blinds 5-6ths.jpg" alt="">
+                        <p></p>
+                      </div>
+                      <!--<div class="modal-footer"><button class="link modal-close">Close Modal</button></div>-->
+                </div>
+          </div>
+                              
+          <!--Modal 14-->  
+          <div class="modal" id="modal14">     <!--CHANGE THE NUMBER TO SUIT-->
+            <div class="modal-content">
+                <div class="modal-header">$TBD
+                  <button class="icon modal-close">&times;</button>
+                </div>
+                  <div class="picture-content">   <!-- Modal Body where additional text and the image will be placed -->
+                    <img class="Flyer" src="img/Friday flyer 24-7 tall.jpg" alt="">
+                    <p></p>
+                  </div>
+                  <!--<div class="modal-footer"><button class="link modal-close">Close Modal</button></div>-->
+                </div>
+          </div>
+
+          <!--Modal 15-->  
+          <div class="modal" id="modal15">     <!--CHANGE THE NUMBER TO SUIT-->
+            <div class="modal-content">
+                <div class="modal-header">$TBD as well
+                  <button class="icon modal-close">&times;</button>
+                </div>
+                <div class="picture-content">   <!-- Modal Body where additional text and the image will be placed -->
+                  <img class="Flyer" src="img/Monster Stack November Blinds 500 x 700.jpg" alt="">
+                  <p></p>
+                </div>
+                <!--<div class="modal-footer"><button class="link modal-close">Close Modal</button></div>-->
+              </div>
+          </div>
+
+          <!--Modal 16-->  
+          <div class="modal" id="modal16">     <!--CHANGE THE NUMBER TO SUIT-->
+            <div class="modal-content">
+              <div class="modal-header">$Not Sure
+                <button class="icon modal-close">&times;</button>
+              </div>
+              <div class="picture-content">   <!-- Modal Body where additional text and the image will be placed -->
+                <img class="Flyer" src="img/Monster Stack November Blinds 500 x 700.jpg" alt="">
+                <p></p>
+              </div>
+              <!--<div class="modal-footer"><button class="link modal-close">Close Modal</button></div>-->
+            </div>
+        </div>
+              
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+    crossorigin="anonymous">
+    </script> 
+    
+    <!--<script src ="main.js"></script>-->
+
+    <script src="modals.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+:root {
+   --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+   --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+   --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+   --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+   --grey:rgb(108,117,125);            /* Box 1 & 3 */
+   --white: #ffffff;                   /* General Text */
+   --black-pure:#000;
+ }
+
+   /* HOW THE BUTTON LOOKS  */
+   .btn {
+      padding: 5px 15px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.5em;
+      display: inline-block;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      background-color: rgb(13, 110, 253);
+      font-weight: 400;
+      font-size: 12px;
+      transition: .3s;  /* HOW LONG THE HOVER STATE TAKES TO OCCUR  */
+   }
+
+   /* WHAT THE HOVER STATE WILL CHANGE TO  */
+   .btn:hover {
+      background-color: var(--white);
+      color: #222;
+   }
+
+ /* HOW THE POPUP WINDOW LOOKS  */
+   .popup1, 
+   .popup2, 
+   .popup3, 
+   .popup4, 
+   .popup5, 
+   .popup6, 
+   .popup7, 
+   /* .popup8,  */
+   .popup9, 
+   .popup10 {
+      position: fixed;
+      padding: 10px;
+      max-width: 610px;
+      border-radius: 0.5em;
+      top: 50%;
+      left: 50%;
+      color: var(--white);
+      transform: translate(-50%, -50%);
+      background-color: rgba(255,255,255,1);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .5s, visibility 0s linear .5s;
+      z-index: 50;
+   }
+   .popup8{
+      position: fixed;
+      padding: 10px;
+      max-width: 600px;
+      border-radius: 0.5em;
+      top: 50%;
+      left: 50%;
+      color: var(--white);
+      transform: translate(-50%, -50%);
+      background-color: rgba(255,255,255,1);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .5s, visibility 0s linear .5s;
+      z-index: 50;
+   }
+   /* THE MAGNIFIYING GLASS */
+   .img-magnifier-container {
+      position:relative;
+    }
+   .img-magnifier-glass {
+      position: absolute;
+      border: 3px solid var(--black-pure);
+      border-radius: 50%;
+      cursor: none;
+                     /*Set the size of the magnifier glass:*/
+      width: 300px;
+      height: 300px;
+                     /*Comment out to hide magnifier glass:*/
+      /* display: none; */
+    }
+
+    /* .fa {
+       font-size: 20px;
+       color: var(--black-pure);
+       cursor: pointer;
+    } */
+    
+    
+   .popup1:target, 
+   .popup2:target, 
+   .popup3:target, 
+   .popup4:target, 
+   .popup5:target, 
+   .popup6:target, 
+   .popup7:target, 
+   .popup8:target, 
+   .popup9:target, 
+   .popup10:target {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+   }
+
+   /* HOW THE CLOSE X IN THE POPUP WINDOW LOOKS  */
+   .popup1 .close, 
+   .popup2 .close, 
+   .popup3 .close, 
+   .popup4 .close, 
+   .popup5 .close, 
+   .popup6 .close, 
+   .popup7 .close, 
+   .popup8 .close, 
+   .popup9 .close, 
+   .popup10 .close {
+      position: absolute;
+      right: 5px;
+      top: 0px;
+      margin-bottom: 5px;
+      padding: 0px 5px 15px 5px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      transition: color .3s;
+      font-size: 2em;
+      font-style: normal;
+      line-height: 1.5;
+      font-weight: 400;
+   }
+   
+   /* MOVED THE CLOSE X IN THE POPUP FOR THIS POPUP ONLY  */
+   .popup10 .close {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      margin-bottom: 5px;
+      padding: 0px 5px 15px 5px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      transition: color .3s;
+      font-size: 2em;
+      line-height: 1.5;
+      font-weight: 400;
+   }
+
+
+   /* WHAT THE HOVER STATE WILL CHANGE TO  */
+   .flyers{
+      margin-top: 10px;
+   }
+
+   /* WHAT THE HOVER STATE WILL CHANGE TO  */
+   .popup1 .close:hover, 
+   .popup2 .close:hover, 
+   .popup3 .close:hover, 
+   .popup4 .close:hover, 
+   .popup5 .close:hover, 
+   .popup6 .close:hover, 
+   .popup7 .close:hover, 
+   .popup8 .close:hover, 
+   .popup9 .close:hover, 
+   .popup10 .close:hover{
+      color: #f00;
+   }
+
+   /* THIS MAKES THE POPUP CLOSE WHEN YOU CLICK THE BACKGROUND  */
+   .close-popup1, 
+   .close-popup2, 
+   .close-popup3, 
+   .close-popup4, 
+   .close-popup5, 
+   .close-popup6, 
+   .close-popup7, 
+   .close-popup8,
+   .close-popup9, 
+   .close-popup10{
+      background-color: rgba(0,0,0,.7);
+      cursor: default;
+      position: fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .5s, visibility 0s linear .5s;
+   }
+   .popup1:target + .close-popup1, 
+   .popup2:target + .close-popup2, 
+   .popup3:target + .close-popup3, 
+   .popup4:target + .close-popup4, 
+   .popup5:target + .close-popup5, 
+   .popup6:target + .close-popup6, 
+   .popup7:target + .close-popup7, 
+   .popup8:target + .close-popup8,
+   .popup9:target + .close-popup9, 
+   .popup10:target + .close-popup10 {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+   }

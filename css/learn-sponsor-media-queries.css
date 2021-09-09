@@ -1,0 +1,54 @@
+:root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+  }
+
+@media (max-width: 1200px) {
+    #learn-image{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #accordian-section h1{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #learn-logo img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    #sponsor-text p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    #learn-logo img{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    #learn-text h2, #sponsor-text h2{
+        font-size: 20px;
+    }
+    #learn-text p{
+        font-size: 16px;
+    }
+    #sponsor-logo img{
+        width: 300px;
+        height: 94px;
+        padding: 10px;
+    }
+    #accordian-section h1{
+        font-size: 1.0rem;    
+    }
+   
+}

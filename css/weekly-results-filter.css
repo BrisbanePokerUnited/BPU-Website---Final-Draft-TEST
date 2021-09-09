@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  :root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:rgb(52, 73, 94);                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+    --black-pure:#000;
+  }
+
+::selection{
+    color: var(--white);
+    background: rgb(0, 123, 255);
+  }
+  #blue-band{
+    background-color: var(--dark-blue);
+    height:60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #blue-band-text{
+    padding-left: 80px;
+    padding-top: 0px;
+    font-size: 20px;
+    color: var(--white);
+    height: 20px;
+  }
+  #showcase-h1{
+    color: var(--white);
+  }
+.title{
+    color: var(--white);
+    font-size: 2px;
+}
+  #closex{
+    font-size: 26px;
+  }
+  #item-blue-bar{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav-item{
+    text-align: end;
+  }
+  body{
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .wrapper{
+    margin: 100px auto;
+    margin-left: 15px;
+    max-width: 1800px;
+  }
+  #item-blue-bar nav{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .items{
+    display: flex;
+    max-width: 1600px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .items span{
+    padding: 7px 7px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #34495e;
+    border-radius: 50px;
+    border: 2px solid #34495e;
+    transition: all 0.3s ease;
+  }
+  #all-btn{
+    width: 100px;
+    text-align: center;
+  }
+  .items span.active,
+  .items span:hover{
+    color: var(--white);
+    background: var(--dark-blue);
+  }
+  #click-photo{
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .gallery .image{
+    width: calc(100% / 9);
+    padding: 7px;
+  }
+  .gallery .image span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gallery .image img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .gallery .image:hover img{
+    transform: scale(1.1);
+  }
+  .gallery .image.hide{
+    display: none;
+  }
+  .gallery .image.show{
+    animation: animate 0.4s ease;
+  }
+
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+  .preview-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: var(--white);
+    max-width: 420px;
+    width: 100%;
+    z-index: 1005;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  }
+  .preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -42%) scale(1);
+    transition: all 0.3s ease;
+  }
+  .preview-box .details{
+    padding: 13px 15px 13px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .details .title p{
+    font-weight: 500;
+    margin-left: 5px;
+  }
+  .details .icon{
+    color: #007bff;
+    font-style: 22px;
+    cursor: pointer;
+  }
+  .preview-box .image-box{
+    width: 100%;
+    display: flex;
+  }
+  .image-box img{
+    padding-top:7px ;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+  }
+  .shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.4);
+  }
+  .shadow.show{
+    display: block;
+  }
+
+@media (max-width: 1000px) {
+  .gallery .image{
+    width: calc(100% / 5);
+  }
+  .items span{
+    padding: 7px 7px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery .image{
+    width: calc(100% / 3);
+  }
+  .items span{
+    padding: 7px 7px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 650px) {
+   nav .items span{
+    padding: 7px 11px;
+  }
+}
+
+@media (max-width: 610px) {
+  .wrapper{
+    margin: 100px auto;
+  }
+  .wrapper nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .items span{
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+  nav .items span{
+    margin: 5px;
+  }
+  .gallery .image{
+    width: 100%;
+    width: calc(100% / 2);
+  }
+}

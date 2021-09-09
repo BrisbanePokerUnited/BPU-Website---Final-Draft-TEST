@@ -1,0 +1,96 @@
+:root {
+    --light-blue:rgb(13,110,253);       /* This was my Original Blue */
+    --dark-blue:#34495e;                /* Hendon Mob, Sponsor, Our Team, Maps */
+    --gold:rgb(255,193,7);              /* Best Poker, Box Headers */
+    --black-mine:rgb(33,36,41);         /* Nav Bar,  Check Yours, Box 2 & 4, Footer */
+    --grey:rgb(108,117,125);            /* Box 1 & 3 */
+    --white: #ffffff;                   /* General Text */
+  }
+
+@media (max-width: 768px) {
+    #our-team h1{
+        font-size: 24px;  
+    }
+    #our-team h4{
+        font-size: 18px;  
+    }
+    #committee-cards{
+        padding-left: 0;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6{
+        width: 300px;
+        height: 380px;
+        margin-left: 2px;
+    }
+    #card10{
+        height: 500px;
+    }
+    .member{
+        font-size: 20px;
+    }
+    .position{
+        font-size: 16px;
+    }
+    #contact-header h1{
+        font-size: 24px;
+    }
+    #qa-text, #aps-text, #phone-text, #email-text, #website-text{
+        font-size: 16px;
+    }
+    #card11, #card12{
+        width: 320px;
+        height: 320px;
+        margin-left: 0;
+    }
+    .card-body img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    #card11, #card12{
+        width: 320px;
+        height: 400px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #our-team h1{
+        font-size: 20px;  
+    }
+    #our-team h4{
+        font-size: 14px;  
+    }
+    #committee-cards{
+        padding-left: 0;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6{
+        width: 250px;
+        height: 360px;
+        margin-left: 2px;
+    }
+    #card10{
+        height: 500px;
+    }
+    .member{
+        font-size: 20px;
+    }
+    .position{
+        font-size: 14px;
+    }
+    #contact-header h1{
+    font-size: 24px;
+    }
+    #qa-text, #aps-text, #phone-text, #email-text, #website-text{
+        font-size: 14px;
+    }
+    #card11, #card12{
+        width: 320px;
+        height: 400px;
+        margin-left: 0;
+    }
+    .card-body img{
+        width: 100%;
+    }
+}

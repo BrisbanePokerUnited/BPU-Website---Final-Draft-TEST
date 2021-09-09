@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="topmenu.css">
+    <title>Brisbane Poker United</title>
+
+    <script type="text/javascript">
+        function clickyClick () {
+          url = "https:/www.thehendonmob.com/search/?q=" + document.getElementById("user-input").value 
+          window.open(url, '_blank');
+        }
+    </script>
+
+</head>
+  <body>
+
+    <!-- DISAPEARING NAVBAR ------------------------------------------------------------- -->
+    <nav id="my-nav">
+      <div id="toggle"></div>
+      <div id="topmenu">
+        <img id="bpu-logo" src="img/BPU logo Black 210x72px.jpg" alt="">
+          <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="previouswinners.html">Weekly Results</a></li>
+              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="stats.html">Stats</a></li>
+              <li><a href="Index.html#info-map">Map</a></li>
+              <li><a href="Index.html#info-contactus">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- NEW JOIN US SECTION ------------------------------------------------------------- -->
+    <section>
+      <div id="best-poker">
+        <h1 id="join-us">Join us for the <span> Best Poker Experience in Brisbane </span></h1>
+        <p id="a-range">A range of Tournament structures to meet all budgets.</p>
+        <img id="qa" src="img/qa BLACK 139x113px.jpg"alt="" width="139" height="113"/>
+        <img id="aps" src="img/APS Black 113x113px.jpg"alt="" width="113" height="113"/>
+      </div>
+    </section>
+      
+      
+ 
+
+    
+
+    <!-- HENDON MOB ---------------------------------------------------------------------- -->
+
+    <section id="blue-band">
+      <p id="all-results">
+        All results posted on the "Hendon Mob"
+      </p>
+      <div>
+        <input id="user-input"type="text"
+        class="form-control" placeholder="Enter your First and Last name" />
+      </div>
+      <button id="hendon-mob-button" onclick="clickyClick()">Check Yours!</button>
+    </section>
+
+  
+    <section class="boxes-new">
+
+    </section>
+   
+
+   
+      
+  
+   
+
+   
+
+<!-- THIS OPENS AND CLOSES A POPUP WINDOW RATHER THAN A MODAL (alex Bogdanov - CodingTuts)-------- -->  
+
+<!-- <button id="button" onclick="openPopupMenu()">  THIS USES THE BUTTON ON LINE 561 - 563 above 
+  Contact Us
+</button> -->
+
+<div id="popup-background">
+  <div id="popup-window">
+    <p id="header-text">This is the header</p>
+    <p id="content-text">Learn how to create a pop up window</p>
+    <img id="content-image" src="/img/BPU Facebook cards and flames 815x315px.jpg" alt="" >
+    <footer>
+      <p id="footer-text">This is the footer</p>
+    </footer>
+    
+    
+    <div id="close_popup_div" title="close this popoup menu" onclick="closePopupMenu()">
+      <p>
+        X
+      </p>
+    </div>
+  </div>
+</div>         
+
+ 
+
+ 
+
+
+
+
+
+  <!-- Modal -->
+  <!-- <div
+    class="modal fade"
+    id="enroll"
+    tabindex="-1"
+    aria-labelledby="enrollLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Contact Us</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill out this form and we will get back to you</p>
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label">
+                First Name:
+              </label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone" />
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label">Message:</label>
+                <input type="textarea" class="form-control" id="message" />
+              </div>
+          </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+     
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+    crossorigin="anonymous">
+    </script> 
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+
+       <!-- <script>
+            mapboxgl.accessToken =
+            pk.eyJ1IjoibWlsdG9udCIsImEiOiJja3E3OXJ6a24wM3p1MnBuNTRoM2FoNDg0In0.EgQpgcqQvH7oobwv90su1A
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-71.060982, 42.35725],
+            zoom: 18,
+      })
+        </script> 
+    
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWlsdG9udCIsImEiOiJja3E3OWdmaXgwMTl4MnVzMTAycW94cHo1In0.81XjRkavY2LUVRFOjyR_5Q';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+
+        
+        
+      });
+    </script>-->
+
+    <script>
+      var userinput
+    </script>
+    
+    <script src ="main.js"></script>
+
+    <script src="modals.js"></script>
+
+  <!-- THIS SCRIPT OPENS AND CLOSES A POPUP WINDOW RATHER THAN A MODAL (alex Bogdanov - CodingTuts)-------- -->  
+    <script type="text/javascript">
+      var popupDiv = document.getElementById("popup-background");
+
+      function openPopupMenu() {
+        popupDiv.style.display = "block";
+      }
+      function closePopupMenu() {
+        popupDiv.style.display = "none";
+      }
+    </script>
+
+    <script>
+      const toggle = document.getElementById('toggle');
+      const topmenu = document.getElementById('topmenu');
+
+      document.onclick = function(e){
+          if(e.target.id !== 'topmenu' && e.target.id !== 'toggle')
+          {
+              toggle.classList.remove('active');
+              topmenu.classList.remove('active') 
+          }
+      }
+      
+      toggle.onclick = function(){
+          toggle.classList.toggle('active');
+          topmenu.classList.toggle('active')
+    }
+    </script>
+
+  </body>
+</html>
+

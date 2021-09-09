@@ -1,0 +1,44 @@
+<!-- By Adam Khoury Video called 
+    copy and paste the text below to view in YouTube
+    (Click outside Close Menu Box JavaScript Css HTML Tutorial)  -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style type="text/css">
+    div#box1{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width:260px ;
+        height: 260px;
+        background: #e2e2e2;
+        padding: 20px;
+        display: none;
+    }
+</style>
+
+<script>
+    window.addEventListener ('mouseup', function(){
+        var box = document.getElementById('box1');
+        if (event.target != box && event.target.parentNode != box){
+            box.style.display = 'none';
+        }
+});
+</script>
+
+</head>
+<body>
+    <div id="box1">
+        <h2>Pop Out Interface</h2>
+    </div>
+    <h3>Page Content</h3>
+    <button onclick="document.getElementById ('box1').style.display='block'">Popo Out Interface</button>
+    <h4>More page content</h4>
+</body>
+</html>

@@ -1,0 +1,514 @@
+body::before {
+  display: block;
+  content: '';
+  height: 0px;
+}
+.container .collapse .ul .navbar-nav .li .nav-item-calendar .text-light-leaderboard{
+  margin-left: 600px;
+  color: red;
+}
+#bpu-logo{
+  float: left;
+  margin-left: 30px;
+}
+#my-nav{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(33, 36, 41);
+  z-index: 100;
+}
+#join-us{
+  position: relative;
+  color: #fff;
+  padding-left: 30px;
+}
+#best-poker{
+  position: relative;
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  width: 100%;
+  height: 300px;
+  top: 80px;
+  background-color: rgb(33, 36, 41);
+}
+
+#join-us span{
+  color: rgb(255, 193, 7);
+}
+#a-range{
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-left: 30px;
+}
+#qa{
+  position: relative;
+}
+#aps{
+  position: relative;
+}
+
+#blue-band{
+  position: relative;
+  top: 380px;
+  background-color: #007bff;
+  height:60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+#all-results{
+  padding-left: 80px;
+  padding-top: 0px;
+  font-size: 20px;
+  color: #fff;
+  height: 20px;
+}
+#user-input{
+  margin-left: 60px;
+  width: 250px;
+}
+#hendon-mob-button{
+  height: 40px;
+  background-color: black;
+  color: #fff;
+}
+#blue-band-text{
+  padding-left: 80px;
+  padding-top: 0px;
+  font-size: 20px;
+  color: #fff;
+  height: 20px;
+}
+/* #boxes{
+  position: absolute;
+  height: 60px;
+}
+#boxes-new{
+ position: relative;
+ width: 100%;
+ height: 150px;
+ background-color: red;
+} */
+#form-contact{
+  border: 1px;
+  background-color: #7b7b7b;
+}
+#form-header1{
+  font-size: larger;
+  font-weight: 300;
+  color: #0b0c0c;
+  border: black;
+  background-color: rgba(240, 234, 234, 0.2);
+} 
+#contact-us-link{
+  color: #fff;
+  list-style: none;
+  display: none;
+}
+.container-leaderboard{
+  display: flex;
+  justify-content: space-evenly;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#up-arrow{
+  color: rgb(88, 93, 97);
+}
+.nav-item{
+  text-align: end;
+}
+.float{
+  position:fixed;
+  width:60px;
+  height:58px;
+  bottom:40px;
+  right:2px;
+  background-color:transparent;
+  border-radius:50px;
+  text-align:center;
+}
+.my-float{
+  margin-top:22px;
+}
+#thursday-flyer{
+  text-align: center;
+}
+.thursday-flyer-container  {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.modal-open{
+  padding: 8px 16px; 
+  background: rgb(13, 110, 253);
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    display: none;  
+    animation: modal-open 1.0s;
+}
+.modal-content {
+    background: #fff;
+    margin-top: 125px;
+    width: auto;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+.modal-header{
+    font-weight: 500;
+    padding: 10px;
+    font-size: 26px;
+}
+.modal-header .modal-close{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    padding: 5px 8px;
+    background-color: white;
+}   
+.modal-body{
+    color: #7b7b7b;
+    padding: 15px 0;
+}
+.flyer{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.modal-footer{
+  padding: 15px 0;
+}
+.modal-footer .modal-close{
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #1a73e8;
+}
+#contact-info-friday{
+  justify-content: center;
+}
+
+#email-contact-us{
+  background-color: #1a73e8;
+  margin-left:150px ;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#email-contact-us:hover{
+  background-color: #04377a;
+}
+
+/*THIS CSS SHOWS AND HIDES A POPUP WINDOW RATHER THAN A MODAL (alex Bogdanov - CodingTuts)-------- */
+
+#button{
+  background-color: #007bff;
+  margin-left:150px ;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
+#popup-background{          /*THIS IS THE DIM OUT THEBACKGROUND CONTENT */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);  /*CHANGE THE LAST NUMBER TO ALTER OPACITY */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#popup-window{    /*THIS IS THE WHITE BOX */
+  position: fixed;
+  width: 533px;                             /*CHANGE THIS TO ALTER SIZE */
+  height: 800px;  
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-top: -340px;         /*THIS VALUE KEEPS IT BELOW THE NAV BAR */
+  margin-left: -266px;        /*THIS NEEDS TO BE HALF THE WIDTH TO KEEP IN THE CENTRE */
+
+}
+#close_popup_div{   /*THIS IS THE CIRCLE AROUND THE X */
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid black;
+  text-align: center;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+#close_popup_div p{   /*THIS IS THE X TO CLOSE THE WINDOW */
+  margin-top: 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#header-text{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: lightyellow;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+#content-text{
+  padding-left: 100px;
+}
+#content-image{
+  position: absolute;
+  width: 600px;
+  max-width: 100%;        /*THIS STOPS IT FROM SPILLING OUT OF THE DIV */
+  height: auto;           /*THIS MAINTAINS THE ORIGINAL ASPECT RATIO */
+       
+}
+#footer{
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+#footer-text{
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: lightyellow;
+  width: 100%;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  border-top: 1px solid black;
+  bottom: 0;
+}
+
+/* DELETE THESE WHEN YOU DELETE XXXTEST.HTML */
+#wrapper{
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  font-size: 30px;
+}
+
+
+
+
+/* KEY FRAMES ----------------------------------------------- */
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERIES ----------------------------------------------- */
+  @media (max-width: 1024px) 
+  {
+    #bpu-logo{
+      margin-left: 30px;
+      width: 168px;
+      height: 58px;
+  } 
+    .news-input {
+      width: 75%;
+    }
+    .img {
+      text-align: center;
+    }
+    #blue-band{
+      height:60px;
+    }
+    #all-results{
+      padding-left: 30px;
+      padding-right: 50px;
+      padding-top: 5px;
+      font-size: 18px;
+      color: #fff;
+      height: 20px;
+    }
+    #user-input{
+      margin-left: 30px;
+      font-size: 12px;
+      width: 200px;
+    }
+    #hendon-mob-button{
+      height: 32px;
+      background-color: black;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    #bpu-logo{
+        margin-left: 30px;
+        width: 168px;
+        height: 58px;
+    } 
+    
+  @media (max-width: 768px) 
+  {
+    #bpu-logo{
+      display: none;
+  }    
+    .news-input {
+      width: 50%;
+    }
+    .img {
+      text-align: center;
+    }
+    #blue-band{
+      height:60px;
+    }
+    #blue-band-text{
+      font-size: 16px;
+      padding-left: 30px;
+    }
+    #all-results{
+      padding-left: 30px;
+      padding-right: 10px;
+      padding-top: 5px;
+      font-size: 18px;
+      color: #fff;
+      height: 20px;
+    }
+    #user-input{
+      margin-left: 10px;
+      font-size: 8px;
+      width: 140px;
+    }
+    #hendon-mob-button{
+      height: 30px;
+      background-color: black;
+      color: #fff;
+      font-size: 8px;
+    }
+  } 
+
+  @media (max-width: 600px) 
+  {
+    #all-results{
+      padding-left: 10px;
+      padding-top: 10px;
+      font-size: 12px;
+      color: #fff;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) 
+  {
+    #blue-band{
+      height:60px;
+    }
+    #blue-band-text{
+      font-size: 14px;
+      padding-left: 30px;
+    }
+    #all-results{
+      padding-left: 10px;
+      padding-top: 10px;
+      font-size: 10px;
+      color: #fff;
+      height: 20px;
+    }
+    #user-input{
+      margin-left: 10px;
+      font-size: 8px;
+      width: 120px;
+    }
+    #hendon-mob-button{
+      height: 32px;
+      background-color: black;
+      color: #fff;
+      font-size: 8px;
+    }
+  }
+
+  @media (max-width: 480px) 
+  {
+      #blue-band{
+      height:60px;
+    }
+    #all-results{
+      padding-left: 0px;
+      padding-top: 5px;
+      font-size: 9px;
+      color: #fff;
+      height: 20px;
+    }
+    #user-input{
+      margin-left: 1px;
+      font-size: 8px;
+      width: 120px;
+    }
+    #hendon-mob-button{
+      height: 32px;
+      background-color: black;
+      color: #fff;
+      font-size: 8px;
+    }
+  }
+
+  @media (max-width: 320px) 
+  {
+      #blue-band{
+      height:60px;
+    }
+    #all-results{
+      padding-left: 0px;
+      padding-top: 7px;
+      font-size: 9px;
+      color: #fff;
+      height: 20px;
+    }
+    #user-input{
+      margin-left: 1px;
+      font-size: 8px;
+      width: 120px;
+    }
+    #hendon-mob-button{
+      height: 32px;
+      background-color: black;
+      color: #fff;
+      font-size: 8px;
+    }
+  }
